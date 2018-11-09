@@ -1,0 +1,25 @@
+@import 'assets/vars';
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #fff;
+	display: flex;
+	font-family: $primaryFont;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
