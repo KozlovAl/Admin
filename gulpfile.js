@@ -32,9 +32,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
   return gulp.src([
         'app/js/libs/jquery-3.3.1.min.js',
-        'app/js/libs/bootstrap.min.js',
-        'app/js/libs/slick.min.js',
-        'app/js/libs/ion.rangeSlider.js'
+        'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
         ])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('app/js/'));

@@ -1,0 +1,12 @@
+#nav-tab .active {
+	background-color: $primaryHover;
+	border-top: 6px solid $blue;
+	height: 100%;
+	color: $blue;
+	line-height: 80px
+}
+
+.nav-tabs,
+.nav-item {
+	line-height: 80px;
+}

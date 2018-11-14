@@ -1,0 +1,22 @@
+.wrapper {
+	color: $primaryColor;
+	height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	display: flex;
+	height: calc(100% - 95px);
+	background: $primaryBackground;
+}
+
+.main {
+	width: 100%;
+}
+
+.main_hero {
+	display: flex;
+	padding: 50px 40px;
+}
+
+
