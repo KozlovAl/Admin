@@ -44,15 +44,78 @@
 
 .income-wrap {
 	display: flex;
+	&:first-child {
+		padding: 0 32px 0 0;
+	}
+	.pillar-one {
+		height: 16px;		
+	}
+	.pillar-two {
+		height: 12px;
+	}
+	.pillar-three {
+		height: 8px;
+	}
+	.pillar-four {
+		height: 10px;
+	}
+	.pillar-five {
+		height: 32px;
+	}
+	.pillar-six {
+		height: 16px;
+	}
+	.pillar-sevne {
+		height: 22px;
+	}
+	.pillar-eight {
+		height: 28px;
+	}
+	.pillar-nine {
+		height: 38px;
+	}
+	.pillar-ten {
+		height: 19px;
+	}
 }
 
 .rank-bg {
 	display: inline-block;
 	height: 40px;
 	width: 3px;
-	background: #333;
+	background: #979fad;
+	&:hover {
+		background: $pink;
+		cursor: pointer;
+	}
+}
+
+.rank-bg-blue:hover {
+	background: $blue;
 }
 
 .rank-wrap {
 	display: flex;
+}
+
+.tooltip.pink {
+	.tooltip-inner {
+		background: $pink;
+	}
+	.arrow {
+		&:before {
+			border-top-color: $pink;
+		}
+	}
+}
+
+.tooltip.blue {
+	.tooltip-inner {
+		background: $blue;
+	}
+	.arrow {
+		&:before {
+			border-top-color: $blue;
+		}
+	}
 }
