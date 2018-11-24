@@ -5,7 +5,7 @@
 
 
 .header {
-	width:100vw;
+	width: 100vw;
 	padding: 20px 40px;
 	display: flex;
 	align-items: center;
@@ -18,8 +18,12 @@
 	justify-content: space-between;
 	position: relative;
 	width: 270px;
-	align-items: center;
 	padding: 0 20px 0 0;
+	@media (max-width: 767px) {
+		flex-direction: column;
+		padding: 0;
+		width: auto;
+	}
 	&:after {
 		content: '';
 		position: absolute;
@@ -28,6 +32,9 @@
 		width: 1px;
 		background: $primaryBackground;
 		height: 90px;
+		@media (max-width: 767px) {
+		display: none;
+	}
 	}
 	a {
 		display: flex;
@@ -58,6 +65,9 @@
 	border: none;
 	cursor: pointer;
 	outline: none;
+	@media (max-width: 767px) {
+		padding-top: 25px;
+	}
 }
 
 .right-side {
@@ -66,11 +76,18 @@
 	padding: 0 40px 0 30px;
 	justify-content: space-between;
 	align-items: center;
+	@media (max-width: 767px) {
+		flex-direction: column-reverse;
+		padding: 0 40px 0 0;
+	}
 }
 
 .form-search { 
   position: relative;
-  display: inline-block; 
+  display: inline-block;
+  @media (max-width: 767px) {
+		margin: 10px 0 0 0;
+	} 
 
  &:focus-within {
   background: linear-gradient($blue, #fff);
@@ -150,6 +167,9 @@
 .messege-wrap {
 	padding: 0 30px;
 	position: relative;
+	@media (max-width: 767px) {
+		padding: 0;
+	}
 	&:after {
 		content:'';
 		position: absolute;
@@ -158,6 +178,9 @@
 		background: $primaryBackground;
 		top: 0;
 		right: -10px;
+			@media (max-width: 767px) {
+			display: none;
+		}
 	}
 
 	&:before {
@@ -168,6 +191,9 @@
 		background: $primaryBackground;
 		top: 0;
 		left: -10px;
+			@media (max-width: 767px) {
+			display: none;
+		}
 	}
 }
 

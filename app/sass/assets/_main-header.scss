@@ -6,9 +6,19 @@
 	background: #fff;
 	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
 	width: 100%;
+	@media (max-width: 767px) {
+		flex-direction: column;
+    align-items: center;
+	}
+	@media (max-width: 480px) {
+		align-items: right;
+	}
 }
 
 .your-profile-wrap {
+	@media (max-width: 767px) {
+		padding: 0 0 20px 0;
+	}
 	span {
 		display: block;
 	}
@@ -34,12 +44,26 @@
 	.choice-home_profile {
 		padding: 0 0 0 10px;
 	}
+	a:hover {
+		color: $blue;
+		text-shadow: 0 0 10px;
+	}
 }
 
 
 .income {
 	display: flex;
 	flex-direction: column;
+	padding: 0 15px 0 0;
+	.income-name {
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	.income-total {
+		color: $blue;
+		font-weight: bold;
+		font-size: 20px;
+	}
 }
 
 .income-wrap {

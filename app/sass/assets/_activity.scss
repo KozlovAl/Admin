@@ -1,7 +1,6 @@
 .tab-pane {
 	padding: 0 40px;
-	overflow: scroll;
-	height: 1200px;
+	height: 970px;
 }
 
 .day {
@@ -83,10 +82,14 @@
 
 .theme-photo {
 	display: flex;
-	padding: 0 0 15px 0;
+	flex-wrap: wrap;
 	.inst-photo {
 		display: block;
 		margin: 0 15px 0 0;
+	}
+	img {
+		margin: 0 0 15px 0;
+		border-radius: 4px;
 	}
 }
 

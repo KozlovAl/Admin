@@ -7,7 +7,8 @@
 @import '../../node_modules/bootstrap/scss/nav';
 @import '../../node_modules/bootstrap/scss/tooltip';
 
-
+// scroll bar
+@import 'assets/libs/jquery.scrollbar';
 
 
 
@@ -21,3 +22,5 @@
 @import 'assets/hero-profile';
 @import 'assets/activity';
 @import 'assets/tab';
+@import 'assets/footer';
+@import 'assets/messeges';

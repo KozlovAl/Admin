@@ -1,0 +1,135 @@
+.messages {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	width: 100%;
+	height: 970px;
+	.chat {
+		width: 100%;
+	}
+	.dialog {
+		display: flex;
+		padding: 20px 0;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50px;
+    	left: 80px;
+			display: block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 16px 16px 0;
+			border-color: transparent $blue transparent transparent;
+		}
+	}
+}
+.avatar {
+	width: 65px;
+	height: 65px;
+	min-width: 65px;
+	margin-right: 30px;
+	border-radius: 50%;
+	background: grey;
+}
+
+.messages-text {
+	background: $blue;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 20px;
+	border-radius: 5px;
+	.messages-author {
+		font-size: 15px;
+		font-weight: 500;
+		margin-right: 10px;
+		&:after {
+			content: '|';
+			margin-left: 12px;
+		}
+  }
+}
+
+.answer {
+	flex-direction: row-reverse;
+	text-align: right;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50px;
+    right: 80px;
+		display: block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 16px 16px 0;
+		border-color: transparent red transparent transparent;
+	}
+	.avatar {
+		margin-left: 30px;
+		margin-right: 0;
+	}
+  .messages-text {
+		background: #f2f4f7;
+		color: #76797e;
+  }
+}
+
+	// ..............submit........
+	
+.messages-submit {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	min-height: 70px;
+
+}
+.messages-field {
+	width: 100%;
+	height: 70px;
+	border-radius: 3px;
+	background-color: #f9f9f9;
+	box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.1);
+	border: 1px solid #ededed;
+	padding: 0px 106px 0px 66px;
+	line-height: 70px;
+	outline: none;
+	color: #9da0a4;
+}
+
+.messages-form {
+	position: relative;
+	width: 100%;
+	.icon-camera {
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 33px;
+ 		transform: translateY(-50%)
+	}
+ 	.fa-camera:before {
+		color: $blue;
+ 	}
+}
+
+.messages-button {
+	position: absolute;
+	right: 0;
+	top: 0;	
+	height: 70px;
+	border-radius: 3px;
+	width: 100px;
+	background-color: #1d2025;
+	cursor: pointer;
+	&:hover {
+		background: $blue;			
+		transition: .3s;
+		box-shadow: 0px 0 15px;
+	}
+	.fa-long-arrow-alt-right {
+		font-size: 40px;
+		color: white;
+	}
+}

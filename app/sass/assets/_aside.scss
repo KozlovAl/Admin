@@ -1,5 +1,6 @@
 
 .aside {
+	position: relative;
 	background-color: #fff;
 	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
 	max-width: 100px;
@@ -7,6 +8,11 @@
 	width: 100%;
 	white-space: nowrap;
 	transition: .5s;
+	@media (max-width: 767px) {
+		position: absolute;
+    padding: 0 0 80px 0;
+    z-index: 3;
+	}
 	h3{
 			color: #d5d8dc;
 		}
@@ -52,5 +58,25 @@
 		color: $primaryColor;
 	  }
 	}
-	
+	.fa-cog:before {
+		font-size: 20px;
+	}
 }
+
+.options {
+	position: absolute;
+	height: 45px;
+	width: 70px;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #f9f9f9;
+	border: 1px solid $grey;
+	border-radius: 4px;
+	&:hover {
+		color: #1585ff;			
+		transition: .3s;
+		box-shadow: 0px 0 15px;
+	}	
+}
+

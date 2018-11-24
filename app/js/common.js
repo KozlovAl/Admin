@@ -5,7 +5,7 @@ $( document ).ready(function() {
   });
 
 
-
+$('.scrollbar-inner').scrollbar();
 
 
 $(function () {
@@ -20,3 +20,4 @@ $(function () {
   });
 });
 })//end document.ready function
+
