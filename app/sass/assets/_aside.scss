@@ -13,15 +13,26 @@
     padding: 0 0 80px 0;
     z-index: 3;
 	}
+	@media (max-width: 479px) {
+		max-width: 50px;
+	}
 	h3{
 			color: #d5d8dc;
+			@media (max-width: 479px) {
+				font-size: 10px;
+				text-align: center;
+				padding: 10px 0 0 0;
+			}
 		}
 
 	&__list {
 		margin-right: 6px;
 	}
 	&__title {
-		padding: 20px 0 0 35px;	
+		padding: 20px 0 0 20px;	
+		@media (max-width: 479px) {
+			padding: 10px 0 0 8px;	
+		}
 	}
 	&__item {
 		transition: .3s;
@@ -45,6 +56,9 @@
 			display: block;
 			padding: 20px 0 20px 35px;	
 			transition: .3s;
+			@media (max-width: 479px) {
+				padding: 10px 0 10px 12px;
+			}
 			i {
 				margin-right: 24px;
 			}
@@ -73,6 +87,10 @@
 	background: #f9f9f9;
 	border: 1px solid $grey;
 	border-radius: 4px;
+	@media (max-width: 479px) {
+		height: 30px;
+		width: 35px;
+	}
 	&:hover {
 		color: #1585ff;			
 		transition: .3s;

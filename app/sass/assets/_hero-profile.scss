@@ -18,17 +18,24 @@
 	background: #fff;
 	padding: 40px;
 	margin: 0 0 60px 0;
+	.name {
+		font-size: 18px;
+		color: #333;
+		font-weight: bold;
+	}
+	@media (max-width: 480px) {
+		padding: 20px;
+	}
 	.total {
 		color: black;
 		font-weight: bold;
 		font-size: 22px;
 	}
-	.name-stat {
 
-	}
 	@media (max-width: 1600px) {
 		width: 50%;
 	}
+
 	@media (max-width: 1200px) {
 		width: 100%;
 	}
@@ -46,8 +53,12 @@
 
 .button-wrap {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	margin: 40px 0;
+	@media (max-width: 479px) {
+			margin: 15px 0;
+		}
 	.profile-button {
 		width: 170px;
 		padding: 20px 0;
@@ -57,6 +68,9 @@
 		outline: none;
 		background: white;
 		color: $blue;
+		@media (max-width: 767px) {
+			margin: 15px;
+		}
 		&:hover {
 			color: red;			
 		  transition: .3s;
@@ -105,6 +119,12 @@
 .profile-statistics {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	.phone-visability {
+		@media (max-width: 480px) {
+			width: 50%;
+		}
+	}
 	span {
 		display: block;
 	}
@@ -194,15 +214,20 @@
 .text11,
 .test12 {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 0 0 25px 0;
+	.one,
+	.four {
+		margin: 0 30px 0 0;
+	}
+
 }
 
 .table-pay {
 	overflow: hidden;
 	padding: 20px 0 0 0;
 	width: 100%;
-	min-width: 390px;
 	.fa-cloud-download-alt {
 		&:hover {
 			color: $blue;
@@ -213,6 +238,7 @@
 .pay-info {
 	width: 100%;
 	border: none;
+	min-width: 390px;
 	tr {
 		border:none;
 		th {

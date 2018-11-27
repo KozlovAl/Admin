@@ -5,12 +5,15 @@
 
 
 .header {
-	width: 100vw;
+	width: 100%;
 	padding: 20px 40px;
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid $primaryBackground;
 	box-shadow: 0px 10px 25px -3px rgba(50, 50, 50, 0.1);
+	@media (max-width: 479px) {
+		padding: 20px 15px;
+	}
 }
 
 .logo {
@@ -76,9 +79,14 @@
 	padding: 0 40px 0 30px;
 	justify-content: space-between;
 	align-items: center;
+
+  @media (max-width: 1023px) {
+		padding: 0 0 0 20px;
+	}
+
 	@media (max-width: 767px) {
 		flex-direction: column-reverse;
-		padding: 0 40px 0 0;
+		padding: 0;
 	}
 }
 
@@ -167,9 +175,15 @@
 .messege-wrap {
 	padding: 0 30px;
 	position: relative;
+
+	@media (max-width: 1023px) {
+		padding: 0 5px;
+	}
+
 	@media (max-width: 767px) {
 		padding: 0;
 	}
+
 	&:after {
 		content:'';
 		position: absolute;
@@ -191,7 +205,7 @@
 		background: $primaryBackground;
 		top: 0;
 		left: -10px;
-			@media (max-width: 767px) {
+		@media (max-width: 767px) {
 			display: none;
 		}
 	}
@@ -211,5 +225,8 @@
 	height: 50px;
 	border: 1px solid $blue;
 	margin: 0 0 0 40px;
+	@media (max-width: 480px) {
+		margin: 0 0 0 15px;
+	}	
 }
 
